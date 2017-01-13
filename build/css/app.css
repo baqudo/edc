@@ -100,7 +100,6 @@ body {
 .top-form {
   position: relative;
   width: 100%;
-  height: 800px;
   background: url(../img/form_bg.jpg), url(../img/layer-2.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -179,7 +178,7 @@ body {
   display: block;
   width: 305px;
   height: 70px;
-  margin: 0 auto;
+  margin: 39px auto 158px;
   border-radius: 5px;
   border: 1px solid #1f96bb;
   background-color: #ff8e41;
