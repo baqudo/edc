@@ -1,0 +1,51 @@
+.select__wrapp 
+	width: 100%
+	border-radius: 5px
+
+.select__bar
+	cursor: pointer
+	margin-top: 7px 
+	width: 100%
+	border-radius: 5px
+	background-color: #ffffff
+	padding: 0 15px
+	line-height: 45px
+	color: #b7c3c7
+	font-size: 1.125em
+	font-weight: 400
+
+	&.is-active
+		color: #000
+		border-radius: 5px 5px 0 0
+		border-bottom: 1px solid #cbd3d6
+		
+.select
+	display: none
+
+/* -------------------------------- */
+.select__dropdown 
+	position: absolute
+	z-index: 10 
+	display: none
+	width: 100%
+	border-radius: 5px
+	background-color: #ffffff
+	color: #b7c3c7
+	font-size: 1.125em
+	font-weight: 400
+	overflow: hidden
+	&.is-active
+		color: #000
+		border-radius: 0 0 5px 5px
+	.option 
+		display: block
+		padding: 0 15px
+		line-height: 45px
+		&:hover
+			cursor: pointer
+			background-color: #eea
+		&_active
+			background-color: #ffd 
+	&:last-child
+		border-radius: 0 0 5px 5px
+

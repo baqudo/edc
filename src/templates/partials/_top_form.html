@@ -1,0 +1,60 @@
+<!-- BEGIN top-form -->
+<div class="top-form">
+	<!-- BEGIN container -->
+	<div class="container">
+		<h1 class="form__title">Онлайн запись в центр Европейский диагностический центр (ЕДЦ)</h1>
+		<form action="#" method="get" class="form">
+			<!-- BEGIN form__inner -->
+			<div class="form__inner">
+				<input class="form__item" type="text" name="name" id="" placeholder="Имя">
+				<input class="form__item" type="tel" name="tel" id="" placeholder="Телефон">
+
+				<fieldset class="form__field">
+					<legend class="form__legend">Выберите специализацию</legend>
+					<select name="spec" id="spec" class="form__item select">
+						<option value="1">МРТ</option>
+						<option value="2">операция</option>
+						<option value="3">неврология</option>
+						<option value="4">сердце</option>
+						<option value="5">позвоночник</option>
+					</select>
+				</fieldset> 
+
+				<fieldset class="form__field">
+					<legend class="form__legend">Выберите услугу</legend>
+					<select name="usl" id="usl" class="form__item select">
+						<option value="1">МРТ головного мозга</option>
+						<option value="2">МРТ гипофиза</option>
+						<option value="3">МРТ глазных орбит</option>
+						<option value="4">МРТ пазух носа</option>
+					</select>
+				</fieldset>
+
+			</div>
+			<!-- END form__inner -->
+			<!-- BEGIN form__inner -->
+			<div class="form__inner">
+				<label class="form__label">
+					<fieldset class="form__field">
+						<legend class="form__legend">Выберите дату</legend>
+						<input class="form__item" type="month" name="date" id="" placeholder="дд.мм">
+					</fieldset>
+				</label>
+
+				<label class="form__label">
+					<fieldset class="form__field">
+						<legend class="form__legend">Выберите время</legend>
+						<input class="form__item" type="time" name="time" id="" value="12:30">
+					</fieldset>
+				</label>
+			</div>
+			<!-- END form__inner -->
+
+			<button type="submit" class="button">Записаться</button>
+
+		</form>
+	</div>
+	<!-- END container -->
+</div>
+<!-- END top-form -->
+
