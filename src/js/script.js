@@ -22,11 +22,12 @@ $(document).ready(function () {
 			$dropdown.append('<li class="option" data-index="' + i + '">' + $options[i].innerHTML + '</li>');
 		};
 
+		
 		// $dropdown__height = $options.length * 50 / 2;
 		// $dropdown.css('height', $dropdown__height + 'px');
 
 		$dropdown.children().on('click', function () {
-			select__bar.html($(this).text()).removeClass('is-active');
+			select__bar.html($(this).text()).removeClass('is-active').addClass('selected')
 			$(this).siblings().removeClass('option_active');
 			$(this).addClass('option_active');
 			// $(this).parent().parent().find('.select__bar')

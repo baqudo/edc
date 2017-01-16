@@ -240,8 +240,11 @@ a {
   background-position: -30px -29px;
 }
 
-.select__bar.is-active {
+.select__bar.selected {
   color: #000;
+}
+
+.select__bar.is-active {
   border-radius: 5px 5px 0 0;
   border-bottom: 1px solid #cbd3d6;
 }
