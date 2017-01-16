@@ -1,0 +1,21 @@
+.breadcrumbs
+	&__item
+		display: inline-block
+		&:first-child .breadcrumbs__link
+			&:before
+				content: ""
+				display: none
+		&:last-child .breadcrumbs__link
+			color: #000
+	&__link
+		display: block
+		// padding-left: 15px 
+		color: #2596ca
+		font-family: "Helvetica Neue"
+		font-size: 13px
+		line-height: 24px
+		&:before
+			content: ""
+			display: inline-block
+			+s(arrow-right) 
+			margin: 0 10px 0 15px

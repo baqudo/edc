@@ -3,21 +3,31 @@
 	border-radius: 5px
 
 .select__bar
+	position: relative
 	cursor: pointer
 	margin-top: 7px 
 	width: 100%
 	border-radius: 5px
 	background-color: #ffffff
 	padding: 0 15px
-	line-height: 45px
+	line-height: 44px
 	color: #b7c3c7
 	font-size: 1.125em
 	font-weight: 400
-
+	border-bottom: 1px solid #fff
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		top: 20px
+		right: 14px  
+		+s(arrow_down)
 	&.is-active
 		color: #000
 		border-radius: 5px 5px 0 0
 		border-bottom: 1px solid #cbd3d6
+		&:after
+			+s(arrow_up)
 		
 .select
 	display: none

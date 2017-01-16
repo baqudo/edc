@@ -11,8 +11,8 @@ $(document).ready(function () {
 		var $select = $(this);
 
 		$select.wrap('<div class="select__wrapp"></div>').before('<div class="select__bar">click</div>').after('<ul class="select__dropdown"></ul>');
-
-		var $options = $select.children();
+		var select__bar = $select.prev('div.select__bar')
+			$options = $select.children();
 
 		// $('.select__bar').innerHTML($options.first(text()));
 
@@ -26,10 +26,10 @@ $(document).ready(function () {
 		// $dropdown.css('height', $dropdown__height + 'px');
 
 		$dropdown.children().on('click', function () {
-
+			select__bar.html($(this).text()).removeClass('is-active');
 			$(this).siblings().removeClass('option_active');
 			$(this).addClass('option_active');
-			$(this).parent().parent().find('.select__bar').html($(this).text()).addClass('is-active');
+			// $(this).parent().parent().find('.select__bar')
 			$(this).parent().hide();
 
 			var index = $(this).attr('data-index');
@@ -45,7 +45,7 @@ $(document).ready(function () {
 	});
 
 	$('.select__bar').on('click', function (e) {
-
+		$(this).toggleClass('is-active');
 		e.stopPropagation();
 		$(e.target).parent().find('.select__dropdown').toggle();
 	});
@@ -56,3 +56,5 @@ $(document).ready(function () {
 		$('.select__dropdown').hide();
 	});
 });
+
+// //////////////////////////////////////////////////////////
