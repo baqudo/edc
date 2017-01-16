@@ -1,9 +1,8 @@
 .content
 	float: left
-	max-width: 751px
+	max-width: 70.52%
 	height: 100% 
-	background-color: #ddd 
-
+	margin-right: 15px
 .doctor
 	margin-top: 42px 
 	&__header
@@ -27,13 +26,34 @@
 	&__text
 		overflow: hidden
 		text-overflow: clip
-		height: 150px
+		height: 130px
 		font-size: 14px
-	&__education
-		margin-top:  
+		line-height: 1.15em 
+	.education
+		max-width: 321px 
+		&__title
+			margin-top: 20px
+			font-weight: 700
+			line-height: 24px
+		&__item
+			font-size: 14px
+			margin-top: 20px
+			margin-left: 20px 
+			&:before
+				content: ""
+				display: inline-block
+				width: 8px
+				height: 8px
+				margin-right: 13px 
+				margin-left: -20px 
+				+s(circle)
+	&__centers
 		font-weight: 700
 		line-height: 24px
+		margin-top: 40px 
+		margin-bottom: 10px 
 .proflist
+
 	&__item
 		display: inline-block
 		margin: 8px 10px 10px 0
@@ -44,3 +64,55 @@
 		background-color: #c4ebf6
 		color: #333333
 		font-size: 14px
+
+.centers
+	width: 100%
+	margin-bottom: 20px 
+	border-radius: 5px
+	background-color: #e6f3f7
+	font-family: "Helvetica Neue", sans-serif
+	font-size: 14px
+	line-height: 22px
+	+clr
+	padding: 15px 
+	&__left
+		float: left
+		margin-left: 7px 
+	&__right
+		float: right
+		margin-right: 15px 
+		+clr
+	&__name
+		color: #2596ca
+		font-size: 21px
+		font-weight: 300
+		line-height: 35px
+	&__metro:before
+		content: ""
+		display: inline-block
+		+s(metro) 
+		margin-right: 10px 
+	&__street:before
+		content: ""
+		display: inline-block
+		+s(map) 
+		margin-right: 12px 
+
+	&__text
+		margin-top: 10px 
+		color: #999999
+		font-size: 12px
+		font-weight: 700
+		line-height: 17px
+		text-align: center
+	&__tel
+		font-weight: 700
+		line-height: 17px
+		color: #000000
+		font-size: 15px
+		text-align: right
+		
+.experts
+	// text-align: justify
+	margin-right: -24px 
+	font-size: 0 

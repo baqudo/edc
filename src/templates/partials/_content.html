@@ -30,7 +30,7 @@
 				7. Жирная рыба Жирная рыба — подпитка для нервной системы Жирная рыба, такая как лосось, сардины и форель, содержит жирные кислоты омега-3, витамины группы В, магний и цинк – вещества, необходимые телу в стрессовых ситуациях. Жирные кислоты улучшают настроение, снижают воспалительные процессы и понижают тягу к сладкому. 8. Чеснок Чеснок — антибактериальная приправа Чеснок имеет мощные антибактериальные, противовирусные и противогрибковые свойства, которые помогают поддерживать иммунную систему в периоды стресса. Он также снижает воспаления суставов, которое возрастает на фоне стрессов. Два зубчика в овощном рагу с лимонным соком, орегано и оливковым маслом подарит букет вкусовых впечатлений и избавит от стресса.
 			</p>
 			<!-- BEGIN doctor__education -->
-			<div class="doctor__education">
+			<div class="doctor__education education">
 				<h4 class="education__title">Образование:</h4>
 				<ul class="education__list">
 					<li class="education__item">Московская государственная медицинская академия (1991 г.)</li>
@@ -41,7 +41,60 @@
 			<!-- END doctor__education -->
 		</div>
 		<!-- END doctor__about -->
+		<!-- BEGIN doctor__centers -->
+		<div class="doctor__centers">
+			Специалист принимает в центрах:
+		</div>
+		<!-- END doctor__centers -->
+		<!-- BEGIN centers -->
+		<div class="centers">
+			<!-- BEGIN centers__left -->
+			<div class="centers__left">
+				<div class="centers__name">МРТ24 на Павелецкой</div>
+				<div class="centers__metro">Павелецкая, Маяковская</div>
+				<div class="centers__street">Павелецкая набережная, 7</div>
+			</div>
+			<!-- END centers__left -->
+			<!-- BEGIN centers__right -->
+			<div class="centers__right">
+				<button class="centers__button button">Записаться</button>
+				<div class="centers__text">или по телефону</div>
+				<div class="centers__tel">+7 (812) 385-77-56</div>
+			</div>
+			<!-- END centers__right -->
+		</div>
+		<!-- END centers -->
 	</div>
 	<!-- END doctor -->
+
+	<!-- BEGIN centers -->
+		<div class="centers">
+			<!-- BEGIN centers__left -->
+			<div class="centers__left">
+				<div class="centers__name">МРТ24 на Павелецкой</div>
+				<div class="centers__metro">Павелецкая, Маяковская</div>
+				<div class="centers__street">Павелецкая набережная, 7</div>
+			</div>
+			<!-- END centers__left -->
+			<!-- BEGIN centers__right -->
+			<div class="centers__right">
+				<button class="centers__button button">Записаться</button>
+				<div class="centers__text">или по телефону</div>
+				<div class="centers__tel">+7 (812) 385-77-56</div>
+			</div>
+			<!-- END centers__right -->
+		</div>
+		<!-- END centers -->
+
+	<!-- BEGIN experts -->
+	<div class="experts">
+		<div class="experts__head">Похожие специалисты</div>
+		<!-- BEGIN expert -->
+			{% include "partials/_experts.html" %}
+		<!-- END expert -->
+	</div>
+	<!-- END experts -->
+
 </div>
 <!-- END content -->
+

@@ -6,11 +6,15 @@ title: EDC
 {% block content %}
 	{% include "partials/_header.html" %}
 	{% include "partials/_top_form.html" %}
-	<!-- BEGIN container -->
-	<div class="container">
-		{% include "partials/_content.html" %}
-		{% include "partials/_sidebar.html" %}
-	</div>
-	<!-- END container -->
+	<!-- BEGIN main -->
+	<main class="main">
+		<div class="wrapper">
+			{% include "partials/_content.html" %}
+			{% include "partials/_sidebar.html" %}
+		</div>
+	</main>
+	<!-- END main -->
+	{% include "partials/_bottom_form.html" %}
+	{% include "partials/_footer.html" %}
 
 {% endblock %}
