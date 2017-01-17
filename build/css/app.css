@@ -171,12 +171,7 @@ a {
   background-color: #ffffff;
   padding: 0 15px;
   line-height: 45px;
-}
-
-.form__item:placeholder {
-  color: #b7c3c7;
   font-size: 1.125em;
-  font-weight: 400;
 }
 
 .form__field {
