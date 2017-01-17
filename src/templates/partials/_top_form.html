@@ -34,17 +34,45 @@
 			<!-- END form__inner -->
 			<!-- BEGIN form__inner -->
 			<div class="form__inner">
+				<fieldset class="form__field">
+					<legend class="form__legend">Выберете время</legend>
+					<select name="usl2" id="usl2" class="form__item select" placeholder="12 : 30">
+						{# <option value="12:30">12 : 30</option> #}
+						<option value="8:00">8:00</option>
+						<option value="8:30">8:30</option>
+						<option value="9:00">9:00</option>
+						<option value="9:30">9:30</option>
+						<option value="10:00">10:00</option>
+						<option value="10:30">10:30</option>
+						<option value="11:00">11:00</option>
+						<option value="11:30">11:30</option>
+					</select>
+				</fieldset>
+				
 				<label class="form__label">
 					<fieldset class="form__field">
 						<legend class="form__legend">Выберите дату</legend>
-						<input class="form__item" type="date" name="date" id="" placeholder="дд.мм">
+						<input class="form__item form__date" type="date" name="date" id="date" placeholder="дд.мм">
+						{# <label for="#date" class="date__label">дд.мм</label> #}
 					</fieldset>
 				</label>
 
 				<label class="form__label">
 					<fieldset class="form__field">
 						<legend class="form__legend">Выберите время</legend>
-						<input class="form__item" type="time" name="time" id="" value="12:30">
+						<input class="form__item form__time" type="time" name="time" value="12:30" list="time-list">
+{# 						<datalist id="time-list">
+							<option value="8:00">8:00</option>
+							<option value="8:30">8:30</option>
+							<option value="9:00">9:00</option>
+							<option value="9:30">9:30</option>
+							<option value=":">:</option>
+							<option value=":">:</option>
+							<option value=":">:</option>
+							<option value=":">:</option>
+							<option value=":">:</option>
+							<option value=":">:</option>
+						</datalist> #}
 					</fieldset>
 				</label>
 			</div>

@@ -170,6 +170,7 @@ a {
   border-radius: 5px;
   background-color: #ffffff;
   padding: 0 15px;
+  height: 45px;
   line-height: 45px;
   font-size: 1.125em;
 }
@@ -218,7 +219,8 @@ a {
   border-radius: 5px;
   background-color: #ffffff;
   padding: 0 15px;
-  line-height: 44px;
+  line-height: 45px;
+  height: 45px;
   color: #b7c3c7;
   font-size: 1.125em;
   font-weight: 400;
@@ -278,6 +280,7 @@ a {
 }
 
 .select__dropdown .option {
+  color: #333;
   position: relative;
   border-left: 3px solid transparent;
   display: block;
