@@ -85,7 +85,7 @@ $(document).ready(function () {
 	$('.select__bar').on('click', function (e) {
 		$(this).toggleClass('is-active');
 		e.stopPropagation();
-		$(e.target).parent().find('.select__dropdown').slideToggle();
+		$(e.target).parent().find('.select__dropdown').toggle();
 	});
 
 	$('body').on('click', function (e) {

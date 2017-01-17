@@ -9,7 +9,6 @@
 			color: #000
 	&__link
 		display: block
-		// padding-left: 15px 
 		color: #2596ca
 		font-family: "Helvetica Neue"
 		font-size: 13px
@@ -19,3 +18,15 @@
 			display: inline-block
 			+s(arrow-right) 
 			margin: 0 10px 0 15px
+
++r(500)
+	.breadcrumbs
+		margin-left: 5px 
+		&__link
+			font-size: 11px 
++r(320)
+	.breadcrumbs 
+		&__link
+			line-height: 14px
+			&:before
+				margin: 0 5px

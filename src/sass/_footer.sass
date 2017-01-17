@@ -6,12 +6,13 @@
 	&__item
 		display: table-cell
 		width: 25% 
-		
+		text-align: left
 		&:not(:first-child)
 			padding-left: 100px
 	&__title
-		font-size: 21px
+		font-size: 1.32em
 		line-height: 24px
+
 	.list
 		margin-top: 23px 
 	.list__link
@@ -19,7 +20,25 @@
 		font-family: "Helvetica Neue"
 		font-size: 14px
 		line-height: 25px
-
++r(998)
+	.footer
+		&__inner
+			margin-bottom: 30px 
+		&__item:not(:first-child)
+			padding-left: 10px
++r(640)
+	.footer
+		&__inner
+			padding-left: 10px 
+			text-align: center
+		&__item
+			display: inline-block
+			width: 50% 
+			margin-top: 10px 
+			&:not(:first-child)
+				padding-left: 0px
+		.list
+			margin-top: 5px 
 // +r(320)
 // 	.footer__inner
 // 		display: block

@@ -153,19 +153,19 @@ a {
 
 .form__title {
   margin-top: 125px;
-  margin-bottom: 85px;
+  margin-bottom: 52px;
   font-size: 2.5em;
   color: #fff;
   text-align: center;
 }
 
 .form__inner {
-  margin: 25px auto;
+  margin: 15px auto;
   text-align: center;
 }
 
 .form__item {
-  margin: 7px 6px 0 0;
+  margin: 10px 6px 0 0;
   width: 240px;
   border-radius: 5px;
   background-color: #ffffff;
@@ -180,6 +180,7 @@ a {
   position: relative;
   width: 240px;
   margin-right: 6px;
+  margin-top: 9px;
 }
 
 .form__legend {
@@ -324,7 +325,7 @@ a {
 }
 
 .doctor__header {
-  font-size: 30px;
+  font-size: 1.875em;
   font-weight: 300;
 }
 
@@ -338,16 +339,16 @@ a {
 }
 
 .doctor__name {
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 700;
   line-height: 24px;
 }
 
 .doctor__exp {
   color: #666666;
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.5em;
   margin-left: 9px;
 }
 
@@ -355,7 +356,7 @@ a {
   overflow: hidden;
   text-overflow: clip;
   height: 130px;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 1.15em;
 }
 
@@ -366,11 +367,11 @@ a {
 .doctor .education__title {
   margin-top: 20px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1.5em;
 }
 
 .doctor .education__item {
-  font-size: 14px;
+  font-size: 0.875em;
   margin-top: 20px;
   margin-left: 20px;
 }
@@ -390,7 +391,7 @@ a {
 
 .doctor__centers {
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1.5em;
   margin-top: 40px;
   margin-bottom: 10px;
 }
@@ -415,8 +416,8 @@ a {
   border-radius: 5px;
   background-color: #e6f3f7;
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 0.875em;
+  line-height: 1.4em;
   *zoom: 1;
   padding: 15px;
 }
@@ -446,9 +447,9 @@ a {
 
 .centers__name {
   color: #2596ca;
-  font-size: 21px;
+  font-size: 1.3125em;
   font-weight: 300;
-  line-height: 35px;
+  line-height: 2.1875em;
 }
 
 .centers__metro:before {
@@ -474,21 +475,22 @@ a {
 .centers__text {
   margin-top: 10px;
   color: #999999;
-  font-size: 12px;
+  font-size: 0.8em;
   font-weight: 700;
-  line-height: 17px;
+  line-height: 1.2em;
   text-align: center;
 }
 
 .centers__tel {
   font-weight: 700;
-  line-height: 17px;
+  line-height: 1.2em;
   color: #000000;
-  font-size: 15px;
+  font-size: 1.1em;
   text-align: right;
 }
 
 .experts {
+  text-align: center;
   margin-right: -24px;
   font-size: 0;
 }
@@ -626,6 +628,7 @@ a {
 .expert__top {
   *zoom: 1;
   display: table;
+  text-align: left;
 }
 
 .expert__top:after {
@@ -643,6 +646,7 @@ a {
 }
 
 .expert__name {
+  text-align: left;
   margin-top: 20px;
   margin-left: 15px;
   font-size: 14px;
@@ -651,6 +655,7 @@ a {
 }
 
 .expert__text {
+  text-align: left;
   margin-top: 4px;
   margin-left: 14px;
   color: #333333;
@@ -700,13 +705,13 @@ a {
 }
 
 .bottom__form .telephone__text {
-  font-size: 21px;
+  font-size: 1.3125em;
   font-weight: 300;
 }
 
 .bottom__form .telephone__number {
   margin-top: 5px;
-  font-size: 40px;
+  font-size: 2.5em;
 }
 
 .bottom__form .select__dropdown {
@@ -723,6 +728,7 @@ a {
 .footer__item {
   display: table-cell;
   width: 25%;
+  text-align: left;
 }
 
 .footer__item:not(:first-child) {
@@ -730,7 +736,7 @@ a {
 }
 
 .footer__title {
-  font-size: 21px;
+  font-size: 1.32em;
   line-height: 24px;
 }
 
@@ -743,6 +749,245 @@ a {
   font-family: "Helvetica Neue";
   font-size: 14px;
   line-height: 25px;
+}
+
+@media only screen and (max-width: 1064px) {
+
+  .wrapper {
+    padding: 0 5px;
+  }
+
+  .expert {
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 1005px) {
+
+  .form__inner {
+    margin: 0 auto;
+  }
+
+  .form__item {
+    width: 45%;
+  }
+
+  .form__field {
+    width: 45%;
+  }
+
+  .form__label {
+    display: inline-block;
+    width: 45%;
+    margin-right: 6px;
+  }
+
+  .form__label .form__field {
+    width: 100%;
+  }
+
+  .form__label .form__field .form__item {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+
+  .footer__inner {
+    margin-bottom: 30px;
+  }
+
+  .footer__item:not(:first-child) {
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+
+  .form__title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 2em;
+  }
+
+  .bottom__form {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px 0;
+  }
+
+  .bottom__form .form .button_big {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .button.button_big {
+    margin: 15px auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  .content {
+    float: none;
+    max-width: 100%;
+    height: 100%;
+    margin-right: 0;
+  }
+
+  .experts {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .doctor {
+    margin-top: 15px;
+  }
+
+  .doctor .education {
+    margin-left: 5px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+
+  .footer__inner {
+    padding-left: 10px;
+    text-align: center;
+  }
+
+  .footer__item {
+    display: inline-block;
+    width: 50%;
+    margin-top: 10px;
+  }
+
+  .footer__item:not(:first-child) {
+    padding-left: 0px;
+  }
+
+  .footer .list {
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .wrapper {
+    padding: 0;
+  }
+
+  .button.button_big {
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .form__title {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+
+  .form__item {
+    width: 90%;
+  }
+
+  .form__field {
+    width: 90%;
+  }
+
+  .form__label {
+    display: inline-block;
+    width: 90%;
+  }
+
+  .top-form {
+    margin-bottom: 10px;
+  }
+
+  .breadcrumbs {
+    margin-left: 5px;
+  }
+
+  .breadcrumbs__link {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+
+  .doctor__header {
+    font-size: 1.5em;
+  }
+
+  .doctor__name {
+    font-size: 1em;
+  }
+
+  .doctor__exp {
+    display: block;
+  }
+
+  .doctor__text {
+    margin-left: 2px;
+    height: 160px;
+  }
+
+  .bottom__form .telephone__text {
+    font-size: 1em;
+  }
+
+  .bottom__form .telephone__number {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+
+  .centers {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .centers__left {
+    float: none;
+    margin-left: 0;
+  }
+
+  .centers__right {
+    float: none;
+    margin-right: 0;
+  }
+
+  .centers__tel {
+    text-align: center;
+  }
+
+  .centers .button {
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+
+  .form__title {
+    font-size: 1.2em;
+  }
+
+  .breadcrumbs__link {
+    line-height: 14px;
+  }
+
+  .breadcrumbs__link:before {
+    margin: 0 5px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
