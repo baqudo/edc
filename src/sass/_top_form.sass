@@ -50,11 +50,31 @@
 		margin-left: 15px 
 	
 .arrow
+	top: 55px
+	right: 15px
+	position: absolute
+	+s(arrow_down)
+	&.is-active
+		top: 52px 
+		+s(arrow_up)
+
+.picker
+	display: block
 	position: relative
+	border-bottom: 1px solid #fff 
 	&:after
 		content: ""
+		display: block
 		position: absolute
+		top: 20px
+		right: 14px  
 		+s(arrow_down)
+	&.is-active
+		border-radius: 5px 5px 0 0
+		border-bottom: 1px solid #cbd3d6
+		&:after
+			+s(arrow_up)
+
 
 +r(1005)
 	.form__inner
