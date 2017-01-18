@@ -2,14 +2,9 @@
 
 $(document).ready(function () {
 
-	var select = $('.select'),
-		pldr = $('.select option:first'),
-		$dropdown,
-		$options;
-
-	$(select).each(function () {
-
-		var $select = $(this);
+	$('.select').each(function () {
+		var $select = $(this),
+			zone =	$select.parents().parents();
 
 		$select.wrap('<div class="select__wrapp"></div>').before('<div class="select__bar">click</div>').after('<ul class="select__dropdown"></ul>');
 		var select__bar = $select.prev('div.select__bar'),
@@ -24,33 +19,32 @@ $(document).ready(function () {
 		};
 
 		$dropdown.children().on('click', function () {
-			select__bar.html($(this).text()).removeClass('is-active').addClass('selected')
+			
 			$(this).siblings().removeClass('option_active');
 			$(this).addClass('option_active');
 			$(this).parent().hide();
-
+			select__bar.html($(this).text()).removeClass('is-active').addClass('selected');
+			
 			var index = $(this).attr('data-index');
-
 			var options = $(this).siblings();
-
 			$(options).attr('selected', false);
-
 			$(options[index]).attr('selected', true);
 		});
+
+		select__bar.on('click', function (e) {
+			$(this).toggleClass('is-active');
+			e.stopPropagation();
+			$dropdown.toggle();
+		});
+
+		zone.on('click', function (e) {
+			e.stopPropagation();
+			$('.select__bar').removeClass('is-active');
+			$('.select__dropdown').hide();
+		});
+
 	});
 
-	$('.select__bar').on('click', function (e) {
-		$(this).toggleClass('is-active');
-		e.stopPropagation();
-		$(e.target).parent().find('.select__dropdown').toggle();
-	});
-
-	$('body').on('click', function (e) {
-
-		e.stopPropagation();
-		$('.select__bar').removeClass('is-active');
-		$('.select__dropdown').hide();
-	});
 });
 
 // //////////////////////////////////////////////////////////

@@ -25,24 +25,14 @@ $(function () {
 
 $(function () {
 
-	
-
-	// $(picker).each(function (){
-	// 	$(this).on('click', function (e) {
-	// 		arrow = $(this).next('.arrow');
-
-	// 		arrow.toggleClass('is-active');
-	// 	$(e.target).parent().find('.arrow').removeClass('is-active');
-
-	// 	})
-	// })
 	$('.picker').each(function () {
 		var picker = $(this);
 		var zone = picker.parents().parents();
-		console.log(zone);
+
+		// console.log(zone);
+
 		picker.on('click', function (e) {
-			var block = $(this),
-				parent = block.parents('.select');
+			var block = $(this);
 
 			if (!block.hasClass('is-active')) {
 				$('.picker').removeClass('is-active');
