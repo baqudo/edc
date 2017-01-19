@@ -1,7 +1,6 @@
 .select__wrapp 
 	width: 100%
 	border-radius: 5px
-
 .select__bar
 	position: relative
 	cursor: pointer
@@ -37,17 +36,17 @@
 
 /* -------------------------------- */
 .select__dropdown 
-
 	position: absolute
 	z-index: 10 
 	display: none
 	width: 100%
+	max-height: 200px 
+	overflow: auto
 	border-radius: 5px
 	background-color: #ffffff
 	color: #b7c3c7
 	font-size: 0.875em
 	font-weight: 400
-	overflow: hidden
 	padding: 15px 0 
 	&.is-active
 		color: #000
@@ -62,7 +61,7 @@
 		&:hover
 			cursor: pointer
 			background-color: #eee
-		&_active
+		&.is-active
 			left: -5px 
 			&:before
 				content: ""

@@ -4,7 +4,7 @@
 //=include lib/slick.min.js
 //=include lib/svgxuse.min.js
 //=include jquery.datetimepicker.full.min.js
-//=include script.js
+//=include my-select.js
 console.log('Hello, World!');
 
 $.datetimepicker.setLocale('ru');
@@ -26,28 +26,27 @@ $(function () {
 $(function () {
 
 	$('.picker').each(function () {
-		var picker = $(this);
-		var zone = picker.parents().parents();
+		var $picker = $(this),
+			$arrow = $picker.next('span.arrow');
 
-		// console.log(zone);
+			$picker.on('focus', function (e) {
+				var block = $(this);
 
-		picker.on('click', function (e) {
-			var block = $(this);
-
-			if (!block.hasClass('is-active')) {
-				$('.picker').removeClass('is-active');
-				$('span.arrow').removeClass('is-active');
-				block.addClass('is-active').next('span.arrow').addClass('is-active');
-			}
-			else {
-				block.removeClass('is-active').next('span.arrow').removeClass('is-active');
-			}
-			e.stopPropagation();
-		});
-
-		zone.on('click', function () {
-			picker.removeClass('is-active');
-			$('span.arrow').removeClass('is-active');
+				if (!block.hasClass('is-active')) {
+					$picker.removeClass('is-active');
+					$arrow.removeClass('is-active');
+					block.addClass('is-active');
+					$arrow.addClass('is-active');
+				}
+				else {
+					block.removeClass('is-active');
+					$arrow.removeClass('is-active');
+				}
+				e.stopPropagation();
+			});
+			$(document).on('focusout', function () {
+			$picker.removeClass('is-active');
+			$arrow.removeClass('is-active');
 		});
 	});
 });
