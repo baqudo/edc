@@ -1,0 +1,63 @@
+<!-- BEGIN record -->
+<div class="record">
+	<!-- BEGIN wrapper -->
+	<div class="wrapper">
+		<h1 class="record__title">Онлайн запись в центр Европейский диагностический центр (ЕДЦ)</h1>
+		<form action="#" method="get" class="record__form">
+			<!-- BEGIN record__inner -->
+			<div class="record__inner">
+				<input class="record__item" type="text" name="name" id="" placeholder="Имя">
+				<input class="record__item" type="tel" name="tel" id="" placeholder="Телефон">
+
+				<fieldset class="record__field">
+					<legend class="record__legend">Выберите специализацию</legend>
+					<select name="spec" id="spec" class="select">
+						<option value="1">МРТ</option>
+						<option value="2">Операция</option>
+						<option value="3">Неврология</option>
+						<option value="4">Сердце</option>
+						<option value="5">Позвоночник</option>
+					</select>
+				</fieldset> 
+
+				<fieldset class="record__field">
+					<legend class="record__legend">Выберите услугу</legend>
+					<select name="usl" id="usl" class="select">
+						<option value="1">МРТ головного мозга</option>
+						<option value="2">МРТ гипофиза</option>
+						<option value="3">МРТ глазных орбит</option>
+						<option value="4">МРТ пазух носа</option>
+					</select>
+				</fieldset>
+
+			</div>
+			<!-- END record__inner -->
+			<!-- BEGIN record__inner -->
+			<div class="record__inner">
+				
+				<label class="record__label">
+					<fieldset class="record__field">
+						<legend class="record__legend">Выберите дату</legend>
+						<input class="record__item picker" type="text" name="date" id="datepicker" placeholder="дд.мм">
+						<span class="icon-arrow"></span>
+					</fieldset>
+				</label>
+
+				<label class="record__label">
+					<fieldset class="record__field">
+						<legend class="record__legend">Выберите время</legend>
+						<input class="record__item picker" type="text" name="time" id="timepicker" placeholder="12 : 30">
+						<span class="icon-arrow"></span>
+					</fieldset>
+				</label>
+			</div>
+			<!-- END record__inner -->
+			
+			<button type="submit" class="button button_big">Записаться</button>
+
+		</form>
+	</div>
+	<!-- END wrapper -->
+</div>
+<!-- END record -->
+

@@ -3,23 +3,26 @@
 //=include lib/jquery.min.js
 //=include lib/slick.min.js
 //=include lib/svgxuse.min.js
-//=include jquery.datetimepicker.full.min.js
+//=include jquery.datetimepicker.full.js
 //=include my-select.js
 console.log('Hello, World!');
 
 $.datetimepicker.setLocale('ru');
+
 $(function () {
+	
 	$('#datepicker').datetimepicker({
-	lang:'ru',
-	timepicker:false,
-	format:'d.m',
-	formatDate:'d.m',
-	minDate: new Date()
+		timepicker:false,
+		lang:'ru',
+		// format:'d.m',
+		// formatDate:'d.m'
+		// minDate: new Date()
 	});
 	$('#timepicker').datetimepicker({
-	datepicker:false,
-	format:'H : i',
-	step:30
+		datepicker:false,
+		format:'H : i',
+		step:30,
+		minTime:'8:00'
 	});
 });
 
@@ -27,7 +30,7 @@ $(function () {
 
 	$('.picker').each(function () {
 		var $picker = $(this),
-			$arrow = $picker.next('span.arrow');
+			$arrow = $picker.next('span.icon-arrow');
 
 			$picker.on('focus', function (e) {
 				var block = $(this);

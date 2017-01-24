@@ -130,7 +130,7 @@ a {
   display: flex;
 }
 
-.top-form {
+.record {
   position: relative;
   width: 100%;
   padding: 1px 0;
@@ -141,7 +141,7 @@ a {
   background-position: 50% 50%;
 }
 
-.top-form:before {
+.record:before {
   content: "";
   display: block;
   position: absolute;
@@ -151,7 +151,7 @@ a {
   background: #23a8d1;
 }
 
-.form__title {
+.record__title {
   margin-top: 125px;
   margin-bottom: 52px;
   font-size: 2.5em;
@@ -159,12 +159,12 @@ a {
   text-align: center;
 }
 
-.form__inner {
+.record__inner {
   margin: 15px auto;
   text-align: center;
 }
 
-.form__item {
+.record__item {
   margin: 10px 6px 0 0;
   width: 240px;
   border-radius: 5px;
@@ -176,7 +176,7 @@ a {
   font-weight: 400;
 }
 
-.form__field {
+.record__field {
   text-align: left;
   display: inline-block;
   position: relative;
@@ -185,7 +185,7 @@ a {
   margin-top: 9px;
 }
 
-.form__legend {
+.record__legend {
   color: #67ceee;
   font-size: 0.875em;
   font-weight: 400;
@@ -194,7 +194,7 @@ a {
   margin-left: 15px;
 }
 
-.arrow {
+.icon-arrow {
   top: 55px;
   right: 15px;
   position: absolute;
@@ -204,7 +204,7 @@ a {
   background-position: -30px -29px;
 }
 
-.arrow.is-active {
+.icon-arrow.is-active {
   top: 52px;
   background-image: url("../img/sprite.png");
   width: 10px;
@@ -431,6 +431,7 @@ a {
 }
 
 .doctor__centers {
+  font-size: 1em;
   font-weight: 700;
   line-height: 1.5em;
   margin-top: 40px;
@@ -451,7 +452,7 @@ a {
   font-size: 14px;
 }
 
-.centers {
+.center {
   width: 100%;
   margin-bottom: 20px;
   border-radius: 5px;
@@ -463,37 +464,37 @@ a {
   padding: 15px;
 }
 
-.centers:after {
+.center:after {
   content: " ";
   display: table;
   clear: both;
 }
 
-.centers__left {
+.center__left {
   float: left;
   margin-left: 7px;
 }
 
-.centers__right {
+.center__right {
   float: right;
   margin-right: 15px;
   *zoom: 1;
 }
 
-.centers__right:after {
+.center__right:after {
   content: " ";
   display: table;
   clear: both;
 }
 
-.centers__name {
+.center__name {
   color: #2596ca;
   font-size: 1.3125em;
   font-weight: 300;
   line-height: 2.1875em;
 }
 
-.centers__metro:before {
+.center__metro:before {
   content: "";
   display: inline-block;
   background-image: url("../img/sprite.png");
@@ -503,7 +504,7 @@ a {
   margin-right: 10px;
 }
 
-.centers__street:before {
+.center__street:before {
   content: "";
   display: inline-block;
   background-image: url("../img/sprite.png");
@@ -513,7 +514,7 @@ a {
   margin-right: 12px;
 }
 
-.centers__text {
+.center__text {
   margin-top: 10px;
   color: #999999;
   font-size: 0.8em;
@@ -522,7 +523,7 @@ a {
   text-align: center;
 }
 
-.centers__tel {
+.center__tel {
   font-weight: 700;
   line-height: 1.2em;
   color: #000000;
@@ -716,7 +717,7 @@ a {
   margin: 5.5px 0;
 }
 
-.bottom__form {
+.conditions {
   margin-top: 85px;
   margin-bottom: 45px;
   border-top: 6px solid #ff8e41;
@@ -724,38 +725,38 @@ a {
   padding: 100px 0 75px;
 }
 
-.bottom__form .form__item {
+.conditions .record__form .record__item {
   border: 1px solid #e4ebed;
 }
 
-.bottom__form .form__legend {
+.conditions .record__form .record__legend {
   color: #c7c7c7;
 }
 
-.bottom__form .form .select__bar {
+.conditions .record__form .select__bar {
   border: 1px solid #e4ebed;
 }
 
-.bottom__form .form .button_big {
+.conditions .record__form .button_big {
   margin-bottom: 67px;
 }
 
-.bottom__form .telephone {
+.conditions .telephone {
   margin: 0 auto;
   text-align: center;
 }
 
-.bottom__form .telephone__text {
+.conditions .telephone__text {
   font-size: 1.3125em;
   font-weight: 300;
 }
 
-.bottom__form .telephone__number {
+.conditions .telephone__number {
   margin-top: 5px;
   font-size: 2.5em;
 }
 
-.bottom__form .select__dropdown {
+.conditions .select__dropdown {
   border: 1px solid #e4ebed;
   border-top: none;
 }
@@ -1411,29 +1412,29 @@ a {
 
 @media only screen and (max-width: 1005px) {
 
-  .form__inner {
+  .record__inner {
     margin: 0 auto;
   }
 
-  .form__item {
+  .record__item {
     width: 45%;
   }
 
-  .form__field {
+  .record__field {
     width: 45%;
   }
 
-  .form__label {
+  .record__label {
     display: inline-block;
     width: 45%;
     margin-right: 6px;
   }
 
-  .form__label .form__field {
+  .record__label .record__field {
     width: 100%;
   }
 
-  .form__label .form__field .form__item {
+  .record__label .record__field .record__item {
     width: 100%;
   }
 }
@@ -1451,19 +1452,19 @@ a {
 
 @media only screen and (max-width: 850px) {
 
-  .form__title {
+  .record__title {
     margin-top: 25px;
     margin-bottom: 25px;
     font-size: 2em;
   }
 
-  .bottom__form {
+  .conditions {
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 15px 0;
   }
 
-  .bottom__form .form .button_big {
+  .conditions .record__form .button_big {
     margin-bottom: 15px;
   }
 }
@@ -1536,21 +1537,21 @@ a {
     padding: 10px 20px;
   }
 
-  .form__title {
+  .record__title {
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 1.5em;
   }
 
-  .form__item {
+  .record__item {
     width: 90%;
   }
 
-  .form__field {
+  .record__field {
     width: 90%;
   }
 
-  .form__label {
+  .record__label {
     display: inline-block;
     width: 90%;
   }
@@ -1587,44 +1588,44 @@ a {
     height: 160px;
   }
 
-  .bottom__form .telephone__text {
+  .conditions .telephone__text {
     font-size: 1em;
   }
 
-  .bottom__form .telephone__number {
+  .conditions .telephone__number {
     font-size: 1.5em;
   }
 }
 
 @media only screen and (max-width: 390px) {
 
-  .centers {
+  .center {
     margin-bottom: 10px;
     padding: 10px;
   }
 
-  .centers__left {
+  .center__left {
     float: none;
     margin-left: 0;
   }
 
-  .centers__right {
+  .center__right {
     float: none;
     margin-right: 0;
   }
 
-  .centers__tel {
+  .center__tel {
     text-align: center;
   }
 
-  .centers .button {
+  .center .button {
     float: left;
   }
 }
 
 @media only screen and (max-width: 325px) {
 
-  .form__title {
+  .record__title {
     font-size: 1.2em;
   }
 }
