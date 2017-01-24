@@ -1623,10 +1623,10 @@ a {
   }
 }
 
-@media only screen and (max-width: 325px) {
+@media only screen and (max-width: 350px) {
 
   .record__title {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
 
