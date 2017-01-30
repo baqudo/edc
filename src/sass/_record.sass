@@ -13,41 +13,42 @@
 		height: 100%  
 		opacity: 0.9
 		background: $form_bg
-
 	&__title
 		margin-top: 125px
 		margin-bottom: 52px 
 		font-size: 2.5em 
 		color: #fff 
 		text-align: center
+		
+.common-inner
+	margin: 15px auto
+	text-align: center
 
-	&__inner
-		margin: 15px auto
-		text-align: center
-	&__item
-		margin: 10px 6px 0 0
-		width: 240px
-		border-radius: 5px
-		background-color: #ffffff
-		padding: 0 15px
-		height: 45px 
-		line-height: 45px
-		font-size: 1.125em
-		font-weight: 400 
-	&__field
-		text-align: left
-		display: inline-block
-		position: relative
-		width: 240px 
-		margin-right: 6px 
-		margin-top: 9px 
-	&__legend
-		color: #67ceee
-		font-size: 0.875em
-		font-weight: 400
-		line-height: 24px
-		text-align: left
-		margin-left: 15px 
+.common-input
+	margin: 10px 6px 0 0
+	width: 240px
+	border-radius: 5px
+	background-color: #ffffff
+	padding: 0 15px
+	height: 45px 
+	line-height: 45px
+	font-size: 1.125em
+	font-weight: 400 
+
+.common-field
+	text-align: left
+	display: inline-block
+	position: relative
+	width: 240px 
+	margin-right: 6px 
+	margin-top: 9px 
+.common-legend
+	color: #67ceee
+	font-size: 0.875em
+	font-weight: 400
+	line-height: 24px
+	text-align: left
+	margin-left: 15px 
 	
 .icon-arrow
 	top: 55px
@@ -77,19 +78,20 @@
 
 
 +r(1005)
-	.record__inner
+	.common-inner
 		margin: 0 auto
-	.record__item
+	.common-input
 		width: 45%
-	.record__field
+	.common-field
 		width: 45%
-	.record__label
+
+	.common-label
 		display: inline-block
 		width: 45% 
 		margin-right: 6px 
-		.record__field
+		.common-field
 			width: 100%
-			.record__item
+			.common-input
 				width: 100% 
 
 +r(850)
@@ -104,14 +106,14 @@
 		margin-top: 15px
 		margin-bottom: 10px 
 		font-size: 1.5em
-	.record__item
+	.common-input
 		width: 90%
-	.record__field
+	.common-field
 		width: 90%
-	.record__label
+	.common-label
 		display: inline-block
 		width: 90% 
-	.top-form
+	.record
 		margin-bottom: 10px 
 
 +r(350)

@@ -159,12 +159,12 @@ a {
   text-align: center;
 }
 
-.record__inner {
+.common-inner {
   margin: 15px auto;
   text-align: center;
 }
 
-.record__item {
+.common-input {
   margin: 10px 6px 0 0;
   width: 240px;
   border-radius: 5px;
@@ -176,7 +176,7 @@ a {
   font-weight: 400;
 }
 
-.record__field {
+.common-field {
   text-align: left;
   display: inline-block;
   position: relative;
@@ -185,7 +185,7 @@ a {
   margin-top: 9px;
 }
 
-.record__legend {
+.common-legend {
   color: #67ceee;
   font-size: 0.875em;
   font-weight: 400;
@@ -725,40 +725,40 @@ a {
   padding: 100px 0 75px;
 }
 
-.conditions .record__form .record__item {
+.conditions .common-input {
   border: 1px solid #e4ebed;
 }
 
-.conditions .record__form .record__legend {
+.conditions .common-legend {
   color: #c7c7c7;
 }
 
-.conditions .record__form .select__bar {
+.conditions .select__bar {
   border: 1px solid #e4ebed;
 }
 
-.conditions .record__form .button_big {
+.conditions .button_big {
   margin-bottom: 67px;
-}
-
-.conditions .telephone {
-  margin: 0 auto;
-  text-align: center;
-}
-
-.conditions .telephone__text {
-  font-size: 1.3125em;
-  font-weight: 300;
-}
-
-.conditions .telephone__number {
-  margin-top: 5px;
-  font-size: 2.5em;
 }
 
 .conditions .select__dropdown {
   border: 1px solid #e4ebed;
   border-top: none;
+}
+
+.telephone {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.telephone__text {
+  font-size: 1.3125em;
+  font-weight: 300;
+}
+
+.telephone__number {
+  margin-top: 5px;
+  font-size: 2.5em;
 }
 
 .footer__inner {
@@ -1412,29 +1412,29 @@ a {
 
 @media only screen and (max-width: 1005px) {
 
-  .record__inner {
+  .common-inner {
     margin: 0 auto;
   }
 
-  .record__item {
+  .common-input {
     width: 45%;
   }
 
-  .record__field {
+  .common-field {
     width: 45%;
   }
 
-  .record__label {
+  .common-label {
     display: inline-block;
     width: 45%;
     margin-right: 6px;
   }
 
-  .record__label .record__field {
+  .common-label .common-field {
     width: 100%;
   }
 
-  .record__label .record__field .record__item {
+  .common-label .common-field .common-input {
     width: 100%;
   }
 }
@@ -1464,7 +1464,7 @@ a {
     padding: 15px 0;
   }
 
-  .conditions .record__form .button_big {
+  .conditions .common-form .button_big {
     margin-bottom: 15px;
   }
 }
@@ -1543,20 +1543,20 @@ a {
     font-size: 1.5em;
   }
 
-  .record__item {
+  .common-input {
     width: 90%;
   }
 
-  .record__field {
+  .common-field {
     width: 90%;
   }
 
-  .record__label {
+  .common-label {
     display: inline-block;
     width: 90%;
   }
 
-  .top-form {
+  .record {
     margin-bottom: 10px;
   }
 
@@ -1588,11 +1588,11 @@ a {
     height: 160px;
   }
 
-  .conditions .telephone__text {
+  .telephone__text {
     font-size: 1em;
   }
 
-  .conditions .telephone__number {
+  .telephone__number {
     font-size: 1.5em;
   }
 }
